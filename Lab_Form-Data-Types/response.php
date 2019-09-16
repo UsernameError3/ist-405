@@ -29,6 +29,8 @@ $Savings_Goal
 // Get the Data from the Form:
 $First_Name = filter_input(INPUT_POST, 'First_Name');
 $Last_Name = filter_input(INPUT_POST, 'Last_Name');
+$Full_Name = $First_Name . ' ' . $Last_Name;
+
 $Street_Address = filter_input(INPUT_POST, 'Street_Address');
 $City = filter_input(INPUT_POST, 'City');
 $State = filter_input(INPUT_POST, 'State');
@@ -129,32 +131,45 @@ if ($error_message != '') {
 <body>
 
 
-<label>Full Name:</label>
-<span><?php echo ($First_Name); ?></span>
-<label>Address:</label>
-<span><?php echo ($Last_Name); ?></span>
-<label>City, State, and ZIP:</label>
-<span><?php echo ($Street_Address); ?></span>
-<label>Phone Number:</label>
-<span><?php echo ($City); ?></span>
-<label>Birth Date:</label>
-<span><?php echo ($State); ?></span>
-<label>User ID:</label>
-<span><?php echo ($Zip_Code); ?></span>
-<label>Random Number Message:</label>
-<span><?php echo ($Phone_Number); ?></span>
-<label>Amount you need to reach your goal:</label>
-<span><?php echo ($Birth_Date); ?></span>
-<label>Length of time to reach your goal:</label>
-<span><?php echo ($Create_UserID); ?></span>
-<label>Approximate date to reach your goal:</label>
-<span><?php echo ($Random_Number); ?></span>
-<label>Current Timestamp:</label>
-<span><?php echo ($Savings_Balance); ?></span>
-<label>Current Date:</label>
-<span><?php echo ($Monthly_Savings); ?></span>
-<label>Current Time:</label>
-<span><?php echo ($Savings_Goal); ?></span>
+<label>Full Name:</label><br>
+<span><?php echo ($Full_Name); ?></span><br>
+<br>
+<label>Address:</label><br>
+<span><?php echo ($Street_Address); ?></span><br>
+<br>
+<label>City, State, and ZIP:</label><br>
+<span><?php echo ($city . ' ' . $State  . ' ' . $Zip_Code); ?></span><br>
+<br>
+<label>Phone Number:</label><br>
+<span><?php echo ($Phone_Number); ?></span><br>
+<br>
+<label>Birth Date:</label><br>
+<span><?php echo ($Birth_Date); ?></span><br>
+<br>
+<label>User ID:</label><br>
+<span><?php echo ($Create_UserID); ?></span><br>
+<br>
+<label>Random Number Message:</label><br>
+<span><?php echo ($Random_Number); ?></span><br>
+<br>
+<label>Amount you need to reach your goal:</label><br>
+<span><?php echo ($Savings_Goal); ?></span><br>
+<br>
+<label>Length of time to reach your goal:</label><br>
+<span><?php echo ("Didin't Finish"); ?></span><br>
+<br>
+<label>Approximate date to reach your goal:</label><br>
+<span><?php echo ("Didn't Finish"); ?></span><br>
+<br>
+<label>Current Timestamp:</label><br>
+<span><?php echo (time()); ?></span><br>
+<br>
+<label>Current Date:</label><br>
+<span><?php echo (date()); ?></span><br>
+<br>
+<label>Current Time:</label><br>
+<span><?php echo (time()); ?></span><br>
+<br>
 
 
 </body>
