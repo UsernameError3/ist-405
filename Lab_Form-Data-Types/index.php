@@ -54,7 +54,7 @@ Tested:     9/15/19
             <input type="text" name"Savings_Goal"></br>
         </div>
         <div id="buttons">
-            <label>&nbsp;</label>
+			<label> </label></br>
             <input type"submit" name="submit" value="Submit"></br>
         </div>
     </form>
