@@ -156,7 +156,7 @@ if ($error_message != '') {
 <span><?php echo ($Savings_Goal); ?></span><br>
 <br>
 <label>Length of time to reach your goal:</label><br>
-<span><?php echo ("Didin't Finish"); ?></span><br>
+<span><?php echo ("Didn't Finish"); ?></span><br>
 <br>
 <label>Approximate date to reach your goal:</label><br>
 <span><?php echo ("Didn't Finish"); ?></span><br>
@@ -165,7 +165,7 @@ if ($error_message != '') {
 <span><?php echo (time()); ?></span><br>
 <br>
 <label>Current Date:</label><br>
-<span><?php echo (date()); ?></span><br>
+<span><?php echo (date('m/d/y')); ?></span><br>
 <br>
 <label>Current Time:</label><br>
 <span><?php echo (time()); ?></span><br>
