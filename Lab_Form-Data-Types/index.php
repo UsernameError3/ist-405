@@ -55,7 +55,7 @@ Tested:     9/15/19
         </div>
         <div id="buttons">
 			<label> </label></br>
-            <input type"submit" name="submit" value="Submit"></br>
+            <input type="submit" name="submit" value="Submit"></br>
         </div>
     </form>
 
