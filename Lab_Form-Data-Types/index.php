@@ -19,12 +19,12 @@ Tested:     9/15/19
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <form action="/response.php" method="post">
+    <form action="response.php" method="post">
         <div id"data">
             <label>First Name:</label></br>
             <input type="text" name"First_Name"></br>
@@ -53,10 +53,10 @@ Tested:     9/15/19
             <label>What is your savings goal?</label></br>
             <input type="text" name"Savings_Goal"></br>
         </div>
-
-		<label>&nbsp;</label>
-		<input type"submit" value="Submit"></br>
-
+        <div id="buttons">
+            <label>&nbsp;</label>
+            <input type"submit" name="submit" value="Submit"></br>
+        </div>
     </form>
 
 </body>
