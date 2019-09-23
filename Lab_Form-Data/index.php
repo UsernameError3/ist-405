@@ -20,9 +20,13 @@ echo '</head>';
 
 echo '<body>';
 
-// Page Content
-
 echo '</body>';
 
 echo '</html>';
 ?>
+
+Name: <input type="text" name="name" value="">
+Secret Code: <input type="password" name="secret" value="<?php echo $secret;?>">
+Hidden Field: <input type="hidden" name="labname" value="Week 3 Lab Exercise">
+
+
