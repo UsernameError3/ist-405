@@ -1,0 +1,90 @@
+
+
+
+
+Goals: connect to a database and insert, update, and delete
+DB: 1 Table
+two example applications in chapter 4 of the textbook.
+
+
+Lab Exercise Requirements:
+
+! Part 1:
+    Database: vehicles
+    Table: cars
+    Fields:
+        car_id integer (primary key) - Should be set to auto-increment.
+        car_make varchar(15)
+        car_model varchar(20)
+        car_color varchar(10)
+        car_year varchar(4)
+        car_price decimal(7,2)
+
+
+! Part 2:
+    * db_conn.php - DB Connection Information assigned to variables. include() in data pages.
+    example: db_name = "vehicles"; (Page 141)
+
+
+! Part 3:
+    * db_error.php - Errors? include() in db_conn.php
+    example: (Page 141)
+
+! Part 4:
+    * index.PHP - Example (Page 147)
+        Title: Car Manager
+
+        List: make, model, color, year, and price of your cars (DO NOT DISPLAY PRIMARY KEY, "car_id")
+        "Add New Car" button - Links to add_car.php
+        "Edit" button - links to edit_car.php
+        "Delete" button - Delete associated record, then refresh page. 
+            PRIMARY KEY, "car_id" will be used in the background, in the DELETE sql statement used to delete the record. 
+
+! Part 5:
+    * add_car.php - contain a simple form to allow users to add a car. 
+    Fields Shown: make, model, color, year, and price of cars added. (DO NOT DISPLAY PRIMARY KEY, "car_id")
+        Form Validations: Filled & Num in Price Field.
+
+    "add car" button - submits record
+        add the record to the database and return index.php
+
+! Part 6:
+    * edit_car.php - contain a simple form to allow users to edit a car record. 
+    Fields Shown: make, model, color, year, and price of cars added. (DO NOT DISPLAY PRIMARY KEY, "car_id")
+        Form Validations: Filled & Num in Price Field.
+
+    "Update Car" button - submits record
+        update the record to the database and return index.php
+
+    Copy add_car.php form, pass in index.php records, USE UPDATE statement for your SQL.
+
+! Part 7:
+    Test Everything
+    
+! Part 8:
+    Comments
+
+Lab Exercise Deliverables:
+
+1. PHP Pages described in the requirements above.
+2. Any CSS pages as needed.
+3. All files zipped up into a single zip file. The zip file name should include your last name and assignment name.
+4. Submit the zip file in the assignment area by the due date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
